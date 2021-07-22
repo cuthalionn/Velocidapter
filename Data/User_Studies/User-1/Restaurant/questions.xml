@@ -1,0 +1,72 @@
+<questions>
+    <question>
+        <slot>
+            <prefix/>
+            <suffix>booktime</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>What time does the user want to book to tables for?</qPhrase>
+            <qPhrase>What time does the user want to sit for the meal?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot>
+            <prefix/>
+            <suffix>food</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>What cuisine does the user want to eat?</qPhrase>
+            <qPhrase>What kind of food does the user want to have?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot>
+            <prefix/>
+            <suffix>name</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>What is the name of the restaurant the user is willing to eat in?</qPhrase>
+            <qPhrase>Which restaurant is the user eating at?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot>
+            <prefix/>
+            <suffix>area</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>What part of the town does the user willing to dine?</qPhrase>
+            <qPhrase>What location does the user want to reserve the restaurant in?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot>
+            <prefix/>
+            <suffix>bookday</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>On what day of the week does the user want to make the reservation for?</qPhrase>
+            <qPhrase>Which day does the user want to dine on?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot>
+            <prefix/>
+            <suffix>bookpeople</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>How many people are there going to be for the meal?</qPhrase>
+            <qPhrase>For how many people is the reservation for?</qPhrase>
+        </qPhrases>
+    </question>
+        <question>
+        <slot>
+            <prefix/>
+            <suffix>pricerange</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>What is the preffered price range of the user?</qPhrase>
+            <qPhrase>Which price range is the user comfortable with?</qPhrase>
+        </qPhrases>
+    </question>
+</questions>

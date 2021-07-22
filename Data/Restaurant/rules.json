@@ -1,0 +1,32 @@
+{
+    "slot1": [
+        "slot2",
+        "slot2a",
+        "slot1a"
+    ],
+    "slot1a": [
+        "slot2",
+        "slot2a",
+        "slot1"
+    ],
+    "slot4": [
+        "slot2",
+        "slot2a",
+        "slot4a"
+    ],
+    "slot4a": [
+        "slot2",
+        "slot2a",
+        "slot4"
+    ],
+    "slot7": [
+        "slot2",
+        "slot2a",
+        "slot7a"
+    ],
+    "slot7a": [
+        "slot2",
+        "slot2a",
+        "slot7"
+    ]
+}

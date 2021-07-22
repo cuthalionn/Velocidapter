@@ -1,0 +1,470 @@
+<templates>
+    <template type="greeting">
+        <turns>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN I want a restaurant in the [slot7] part of town that serves [slot1] food USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot7">
+                        <prefix/>
+                        <suffix>area</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot1">
+                        <prefix/>
+                        <suffix>food</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN I'm trying to find a restaurant that serves [slot1] food. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot1">
+                        <prefix/>
+                        <suffix>food</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN I want a restaurant that serves [slot1a] food. USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN Sorry, there are no restaurants serves that in the town. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN How about [slot1] food please? USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot1a">
+                        <prefix>arbitrary</prefix>
+                        <suffix>food</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot1">
+                        <prefix/>
+                        <suffix>food</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN Can you help me find a restaurant in the [slot7] that is in [slot4] price range. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot7">
+                        <prefix/>
+                        <suffix>area</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot4">
+                        <prefix/>
+                        <suffix>price_range</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN Can you help me find a restaurant by the name of [slot2] USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN Yes! The restaurant is at [slot5a] in the [slot4] price range. Would you like me to book tickets? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Please book a table for [slot8] people at [slot3] on [slot9]. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot2">
+                        <prefix/>
+                        <suffix>name</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot5a">
+                        <prefix>arbitrary</prefix>
+                        <suffix>address</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot4">
+                        <prefix/>
+                        <suffix>price_range</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot8">
+                        <prefix/>
+                        <suffix>bookpeople</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot3">
+                        <prefix/>
+                        <suffix>booktime</suffix>
+                        <index/>
+                    </slot>
+                        <slot id="slot9">
+                        <prefix/>
+                        <suffix>bookday</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN Where can I find [slot1] food? I prefer an [slot4] restaurant please. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot1">
+                        <prefix/>
+                        <suffix>food</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot4">
+                        <prefix/>
+                        <suffix>price_range</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN I am looking for a restaurant in the [slot7] side that is in the [slot4] price range. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot7">
+                        <prefix/>
+                        <suffix>area</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot4">
+                        <prefix/>
+                        <suffix>price_range</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN I am looking for a place to dine. The restaurant should be in the [slot4] price range and should serve [slot1] food. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot4">
+                        <prefix/>
+                        <suffix>price_range</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot1">
+                        <prefix/>
+                        <suffix>food</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+        </turns>
+    </template>
+    <template type="request_respond">
+        <turns>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN You might like to dine at [slot2]. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Sorry what type of food do they serve? USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN They serve [slot1] food. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Okay, sounds good. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot2">
+                        <prefix/>
+                        <suffix>name</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot1">
+                        <prefix/>
+                        <suffix>food</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN There are many restaurant that is a fit, what day are you going to reserve for? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Are any of them available for [slot8] people at [slot3] on [slot9]? USERTURN</utt>
+                    <utt speaker="user">SYSTEMTURN [slot2] serving [slot1] is available. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Great! USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot8">
+                        <prefix/>
+                        <suffix>bookpeople</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot3">
+                        <prefix/>
+                        <suffix>booktime</suffix>
+                        <index/>
+                    </slot>
+                        <slot id="slot9">
+                        <prefix/>
+                        <suffix>bookday</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot2">
+                        <prefix/>
+                        <suffix>name</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot1">
+                        <prefix/>
+                        <suffix>food</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN There are many restaurants that is a fit, what day are you going to reserve for? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN  Are any of them available for [slot8] people at [slot3] on [slot9]? USERTURN</utt>
+                    <utt speaker="user">SYSTEMTURN [slot2] is available. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Great! USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot8">
+                        <prefix/>
+                        <suffix>bookpeople</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot3">
+                        <prefix/>
+                        <suffix>booktime</suffix>
+                        <index/>
+                    </slot>
+                        <slot id="slot9">
+                        <prefix/>
+                        <suffix>bookday</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot2">
+                        <prefix/>
+                        <suffix>name</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN What area were you looking for? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Anywhere really. USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN An [slot4] [slot1] restaurant is found in the [slot7] of town, [slot2]. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Great, thank you! USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot4">
+                        <prefix/>
+                        <suffix>price_range</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot1">
+                        <prefix/>
+                        <suffix>food</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot7">
+                        <prefix/>
+                        <suffix>area</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot2">
+                        <prefix/>
+                        <suffix>name</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN I have one [slot4] [slot1] food in the [slot7]. It is called [slot2]. Would you like a reservation? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Perfect, yes. I want a table for [slot8] at [slot3] on [slot9]. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot4">
+                        <prefix/>
+                        <suffix>price_range</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot1">
+                        <prefix/>
+                        <suffix>food</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot7">
+                        <prefix/>
+                        <suffix>area</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot2">
+                        <prefix/>
+                        <suffix>name</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot8">
+                        <prefix/>
+                        <suffix>bookpeople</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot3">
+                        <prefix/>
+                        <suffix>booktime</suffix>
+                        <index/>
+                    </slot>
+                        <slot id="slot9">
+                        <prefix/>
+                        <suffix>bookday</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN When are you looking to reserve for? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN I want a table for [slot8] people on [slot9]. USERTURN</utt>
+                    <utt speaker="user">USERTURN And what time? USERTURN</utt>
+                    <utt speaker="user">USERTURN [slot3] would be fine. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot8">
+                        <prefix/>
+                        <suffix>bookpeople</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot9">
+                        <prefix/>
+                        <suffix>bookday</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot3">
+                        <prefix/>
+                        <suffix>booktime</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN May I recommend [slot2], they serve wonderful food. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN  Are they located in the [slot7]? USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN Yes, they are. Should I book that for you? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Yes, please try for [slot9] at [slot3] for [slot8] people. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot2">
+                        <prefix></prefix>
+                        <suffix>name</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot7">
+                        <prefix></prefix>
+                        <suffix>area</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot9">
+                        <prefix></prefix>
+                        <suffix>bookday</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot3">
+                        <prefix></prefix>
+                        <suffix>booktime</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot8">
+                        <prefix></prefix>
+                        <suffix>bookpeople</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN How does [slot2] sound? It serves [slot1]? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN That would be good. I would like to try that one if you recommend it. USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN I was able to successfully book that for you. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Sounds, great. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot2">
+                        <prefix/>
+                        <suffix>name</suffix>
+                        <index/>
+                    </slot>
+                    <slot id="slot1">
+                        <prefix/>
+                        <suffix>food</suffix>
+                        <index/>
+                    </slot>
+                </slots>
+            </turn>
+        </turns>
+    </template>
+    <template type="end">
+        <turns>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Anything else I can help you with? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Could you give me the address and phone number? USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN I sure can. The address is Cambridge Leisure Park Clifton Way CB 1, 7 DY, and the phone number is 01223308871. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Thank you. USERTURN</utt>
+                </utts>
+                <slots/>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Can I help you with anything else? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Can you share their postcode please. USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN The postcode is [slot6a] SYSTEMTURN</utt>
+                    <utt speaker="system">USERTURN Thank you! USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot6a">
+                        <prefix>arbitrary</prefix>
+                        <suffix>postcode</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Thank you for using the system. Goodbye SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Thank you, goodbye. USERTURN</utt>
+                </utts>
+                <slots/>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Anything else I can help you with? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Thank you. That was all I needed today. Goodbye. USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN You are very welcome. Have a nice time! SYSTEMTURN</utt>
+                </utts>
+                <slots/>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Can I help you with anything else today? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN No that was all. Thank you. USERTURN</utt>
+                </utts>
+                <slots>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN How else may I assist you? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN That should do it for today. Thanks a lot. USERTURN</utt>
+                </utts>
+                <slots>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Can I help you with anything else? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN No, that is all that I needed. Thank you for your time. USERTURN</utt>
+                </utts>
+                <slots>
+                </slots>
+            </turn>
+        </turns>
+    </template>
+</templates>

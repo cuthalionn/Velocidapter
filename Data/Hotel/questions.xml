@@ -1,0 +1,82 @@
+<questions>
+    <question>
+        <slot>
+            <prefix/>
+            <suffix>name</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>What is the name of the hotel that user wants to stay in?</qPhrase>
+            <qPhrase>What hotel is the user going to stay in?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot>
+            <prefix/>
+            <suffix>type</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>What is the type of the booked hotel?</qPhrase>
+            <qPhrase>What kind of hotel did the user book?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot>
+            <prefix/>
+            <suffix>bookday</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>What day is the reservation for?</qPhrase>
+            <qPhrase>What is preferred day of the user for booking?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot>
+            <prefix/>
+            <suffix>area</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>In which area does the user willing to stay in?</qPhrase>
+            <qPhrase>Which part of the town does the user want to stay in?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot>
+            <prefix/>
+            <suffix>bookpeople</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>How many people is booking for?</qPhrase>
+            <qPhrase>For how many people is the reservation?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot>
+            <prefix/>
+            <suffix>price_range</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>What is the price range of the hotel?</qPhrase>
+            <qPhrase>What price range does the user prefer for their booking?</qPhrase>
+        </qPhrases>
+    </question>
+        <question>
+        <slot>
+            <prefix/>
+            <suffix>bookstay</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>How many days is the user going to stay?</qPhrase>
+            <qPhrase>For how long is the reservation made for?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot>
+            <prefix/>
+            <suffix>stars</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>How many stars does the reserved hotel have?</qPhrase>
+            <qPhrase>What is the star count of the booked hotel?</qPhrase>
+        </qPhrases>
+    </question>
+</questions>

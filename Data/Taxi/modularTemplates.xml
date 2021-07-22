@@ -1,0 +1,222 @@
+<templates>
+    <template type="greeting">
+        <turns>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN Hi, I need to book a taxi to go to [slot1]. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot1">
+                        <prefix></prefix>
+                        <suffix>destination_place</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN Hi, I need to take a taxi from [slot2]. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot2">
+                        <prefix></prefix>
+                        <suffix>departure_place</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>  
+                    <utt speaker="user">USERTURN Hi, I need to take a taxi to arrive [slot1] by [slot4]. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot1">
+                        <prefix></prefix>
+                        <suffix>destination_place</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot4">
+                        <prefix></prefix>
+                        <suffix>arriveby_time</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>  
+                    <utt speaker="user">USERTURN Hi, I need to a taxi at [slot3]. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot3">
+                        <prefix></prefix>
+                        <suffix>leaveat_time</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN Hi, I need to book a taxi to go to [slot1]. I need to leave after [slot3]. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot1">
+                        <prefix></prefix>
+                        <suffix>destination_place</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot3">
+                        <prefix></prefix>
+                        <suffix>leaveat_time</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                   <utt speaker="user">USERTURN Hi, I need to book a taxi to go to [slot1]. I need to leave after [slot3]. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot1">
+                        <prefix></prefix>
+                        <suffix>destination_place</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot3">
+                        <prefix></prefix>
+                        <suffix>leaveat_time</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN I need to book a taxi from [slot2] to [slot1]. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot2">
+                        <prefix></prefix>
+                        <suffix>departure_place</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot1">
+                        <prefix></prefix>
+                        <suffix>destination_place</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN I need to book a taxi from [slot2] to [slot1]. I need to arrive by [slot4] and need the car type and contact number. USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN The contact number is 07502362913. It will be a white audi. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Okay, thanks! USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot2">
+                        <prefix></prefix>
+                        <suffix>departure_place</suffix>
+                        <index></index> 
+                    </slot>
+                    <slot id="slot1">
+                        <prefix></prefix>
+                        <suffix>destination_place</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot4">
+                        <prefix></prefix>
+                        <suffix>arriveby_time</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+        </turns>
+    </template>
+    <template type="request_respond">
+        <turns>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Okay, where are do you want to go? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN To [slot1] please. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot1">
+                        <prefix></prefix>
+                        <suffix>destination_place</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Where will you leave from? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN The taxi should depart from [slot2] USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot2">
+                        <prefix></prefix>
+                        <suffix>departure_place</suffix>
+                        <index></index> 
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN What time do you want to leave at? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN The taxi should depart at [slot3] USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot3">
+                        <prefix></prefix>
+                        <suffix>leaveat_time</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN When do you have to be there? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN I should get there by [slot4] USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot4">
+                        <prefix></prefix>
+                        <suffix>arriveby_time</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+        </turns>
+    </template>
+    <template type="end">
+        <turns>
+             <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Is there anything else I can help you with? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN That's all I needed today. Thanks! USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN It was my pleasure! Have a nice day! SYSTEMTURN</utt>
+                </utts>
+                <slots>
+                </slots>
+            </turn>
+             <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Anything else you need? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN No thanks, just needed a taxi. Have a great day! USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN Thanks, I hope you have a wonderful day as well! SYSTEMTURN</utt>
+                </utts>
+                <slots>
+                </slots>
+            </turn>
+             <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN How else can I help you? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN I think that would be all. Thanks for the help. USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN Okay enjoy your ride and have a nice day. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Thank you you too! USERTURN</utt>
+                </utts>
+                <slots>
+                </slots>
+            </turn>
+        </turns>
+    </template>
+</templates>

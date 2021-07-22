@@ -1,0 +1,315 @@
+<templates>
+    <template type="greeting">
+        <turns>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN Can you help me find a place to stay? I'm looking for somewhere that include free wifi and free parking. USERTURN</utt>
+                </utts>
+                <slots>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN I'm looking for a place to stay. Where would you recommend? USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN Several good choices come to mind, what part of town are you looking to stay in? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN [slot1] part and it should have free parking and [slot2] price. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot1">
+                        <prefix></prefix>
+                        <suffix>area</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot2">
+                        <prefix></prefix>
+                        <suffix>price_range</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN Hi, I need a hotel with free wifi internet and a rating of [slot4] stars. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot4">
+                        <prefix></prefix>
+                        <suffix>stars</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="user">USERTURN Can you help me find a place to stay? USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN What area are you looking? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN I am looking for a [slot2] [slot3] in [slot1] if possible. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot2">
+                        <prefix></prefix>
+                        <suffix>price_range</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot3">
+                        <prefix></prefix>
+                        <suffix>type</suffix>
+                        <index></index>
+                    </slot>                  
+                    <slot id="slot1">
+                        <prefix></prefix>
+                        <suffix>area</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+        </turns>
+    </template>
+    <template type="request_respond">
+        <turns>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Several good choices come to mind, what part of town are you looking to stay in? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Prefereably [slot1] part. USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN I have 9 entries, all of them are [slot3]. Is that acceptable? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN That is okay with me. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot1">
+                        <prefix></prefix>
+                        <suffix>area</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot3">
+                        <prefix></prefix>
+                        <suffix>type</suffix>
+                        <index></index>
+                    </slot>    
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN How many nights will you be staying? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN [slot5] nights starting [slot6], [slot7] people. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot5">
+                        <prefix></prefix>
+                        <suffix>bookstay</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot6">
+                        <prefix></prefix>
+                        <suffix>bookday</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot7">
+                        <prefix></prefix>
+                        <suffix>bookpeople</suffix>
+                        <index></index>
+                    </slot>  
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN What kind of place are you looknig for? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN I am looking for a [slot3] if possible. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot3">
+                        <prefix></prefix>
+                        <suffix>type</suffix>
+                        <index></index>
+                    </slot> 
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN And how many people are there in your party? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN We will be [slot7] people. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot7">
+                        <prefix></prefix>
+                        <suffix>bookpeople</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+           <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN How many nights will you be staying? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN [slot5] nights starting [slot6]. USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN Okay, great. And have many of you are there? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN [slot7]. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot5">
+                        <prefix></prefix>
+                        <suffix>bookstay</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot6">
+                        <prefix></prefix>
+                        <suffix>bookday</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot7">
+                        <prefix></prefix>
+                        <suffix>bookpeople</suffix>
+                        <index></index>
+                    </slot>  
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Are you looking for a hotel or a guesthouse? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN I am looking for a [slot4] star [slot3]? USERTURN</utt> 
+                </utts>
+                <slots>
+                    <slot id="slot4">
+                        <prefix></prefix>
+                        <suffix>stars</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot3">
+                        <prefix></prefix>
+                        <suffix>type</suffix>
+                        <index></index>
+                    </slot> 
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Are you looking for a hotel or a guesthouse? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN I am looking for a [slot4] star guesthouse. USERTURN</utt> 
+                    <utt speaker="system">SYSTEMTURN I can book a room for you in [slot8]. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Okay but what is the price range? USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN It is in [slot2] range. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Okay, that would work. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot4">
+                        <prefix></prefix>
+                        <suffix>stars</suffix>
+                        <index></index>
+                    </slot>
+                        <slot id="slot8">
+                        <prefix></prefix>
+                        <suffix>name</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot2">
+                        <prefix></prefix>
+                        <suffix>price_range</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Are you looking for a hotel or a guesthouse? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN I am looking for a [slot4] star guesthouse? USERTURN</utt> 
+                    <utt speaker="system">SYSTEMTURN I found 7 that are in the several price ranges. What would you prefer? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN I think I will go with [slot2] USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot4">
+                        <prefix></prefix>
+                        <suffix>stars</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot2">
+                        <prefix></prefix>
+                        <suffix>price_range</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN I am going to book you into [slot8] SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Okay,it sounds good. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot8">
+                        <prefix></prefix>
+                        <suffix>name</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN We've got several places with that criteria. Would you like to stay in the centre or elsewhere? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN It doesn't matter where the place is located. Let's go with [slot1]. USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN [slot8] is a hotel in that area. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Okay, it sounds good. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot1">
+                        <prefix></prefix>
+                        <suffix>area</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot8">
+                        <prefix></prefix>
+                        <suffix>name</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+            <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Okay, how many nights will you be staying? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN [slot5] nights, checking in on [slot6]. USERTURN</utt>
+                </utts>
+                <slots>
+                    <slot id="slot5">
+                        <prefix></prefix>
+                        <suffix>bookstay</suffix>
+                        <index></index>
+                    </slot>
+                    <slot id="slot6">
+                        <prefix></prefix>
+                        <suffix>bookday</suffix>
+                        <index></index>
+                    </slot>
+                </slots>
+            </turn>
+        </turns>
+    </template>
+    <template type="end">
+        <turns>
+             <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Booking was successful. Reference number is : 565UIMXV. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Thank you for your help. Do I need to do anything else or I'm good? USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN That is all unless you need something more from me. SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Thanks for all your help. USERTURN</utt>
+                </utts>
+                <slots>
+                </slots>
+            </turn>
+             <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Your reference number is WXN8W3MZ. May I help you with anything else? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Thats all thank you. USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN Okay great. Enjoy your stay in Cambridge. SYSTEMTURN</utt>
+                </utts>
+                <slots>
+                </slots>
+            </turn>
+             <turn>
+                <utts>
+                    <utt speaker="system">SYSTEMTURN Okay, anything else I can help you with? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN Could I get the hotel's phone number and postcode please? USERTURN</utt>
+                    <utt speaker="system">SYSTEMTURN They can be reached at 01223312843. May I assist with anything else? SYSTEMTURN</utt>
+                    <utt speaker="user">USERTURN No, you helped me out. Thanks. Goodbye. USERTURN</utt>
+                </utts>
+                <slots>
+                </slots>
+            </turn>
+        </turns>
+    </template>
+</templates>

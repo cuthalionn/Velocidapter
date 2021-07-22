@@ -1,0 +1,45 @@
+<questions>
+    <question>
+        <slot>
+            <prefix></prefix>
+            <suffix>destination_place</suffix>
+        </slot>
+        <qPhrases>
+            <qPhrase>From where does the user want to depart for the taxi ride?</qPhrase>
+            <qPhrase>Where is the user starting their taxi ride?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot >
+            <prefix></prefix>
+            <suffix>arriveby_time</suffix>
+            <index></index>
+        </slot>
+        <qPhrases>
+            <qPhrase>When does the user want to arrive the destionation?</qPhrase>
+            <qPhrase>When does the user expect to reach their destinoation?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot >
+            <prefix></prefix>
+            <suffix>destination_place</suffix>
+            <index></index>
+        </slot>
+        <qPhrases>
+            <qPhrase>Where does the user want to get a ride to?</qPhrase>
+            <qPhrase>What is the destionation of the taxi ride?</qPhrase>
+        </qPhrases>
+    </question>
+    <question>
+        <slot >
+            <prefix></prefix>
+            <suffix>leaveat_time</suffix>
+            <index></index>
+        </slot>
+        <qPhrases>
+            <qPhrase>What time is the user willing to leave?</qPhrase>
+            <qPhrase>When does the user want to start the ride?</qPhrase>
+        </qPhrases>
+    </question>
+</questions>
