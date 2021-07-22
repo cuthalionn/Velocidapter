@@ -1,0 +1,195 @@
+{
+    "data": [
+        {
+            "paragraphs": [
+                {
+                    "context": "USERTURN I'm looking for a place to stay in Cambridge. Where would you recommend? USERTURN SYSTEMTURN Several good choices come to mind, what part of town are you looking to stay in? SYSTEMTURN USERTURN any part but should have free parking and moderately priced. should also be a star of 4 USERTURN SYSTEMTURN I have 9 entries, all of them are guesthouses. Is that acceptable? SYSTEMTURN USERTURN Do you have any thing that is not a guesthouse in other areas? USERTURN SYSTEMTURN No I am sorry all that are available are guesthouses SYSTEMTURN USERTURN Yes. Monday, two nights three people. USERTURN SYSTEMTURN I'm sorry but there are no hotels available with those specifications. Would you like to look in a different area? SYSTEMTURN USERTURN Do you have any of the guesthouses in the centre? USERTURN SYSTEMTURN No, sorry I don't. Would you like to try a different area? SYSTEMTURN USERTURN It doesn't matter where the guesthouse is! I'm sorry, a hotel or guesthouse is absolutely fine, the only thing that matters is free parking, 4 stars, and in the moderate price. USERTURN SYSTEMTURN The Acorn Guest House matches the criteria you are looking for. Would you like to make reservations? SYSTEMTURN USERTURN Yes please. There's 3 of us and we want to check in on Monday and stay for just 2 nights USERTURN SYSTEMTURN Would you like me to book it for you ? SYSTEMTURN ",
+                    "qas": [
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 1057,
+                                    "text": "moderate"
+                                }
+                            ],
+                            "id": "757",
+                            "is_impossible": "false",
+                            "question": "What is the price range of the hotel?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 1037,
+                                    "text": "4"
+                                }
+                            ],
+                            "id": "758",
+                            "is_impossible": "false",
+                            "question": "What is the star count of the booked hotel?"
+                        }
+                    ]
+                },
+                {
+                    "context": "USERTURN Can you help me find a place to stay? I'm looking for somewhere that include free wifi and free parking. USERTURN SYSTEMTURN I found 5 hotels with free Internet and parking. What area are you looking? SYSTEMTURN USERTURN Area doesn't matter, but I would like a cheap guesthouse, if possible. USERTURN SYSTEMTURN The city centre north b and b is a guesthouse in the north area in the cheap range, with parking and wifi. Would you care to book a room? SYSTEMTURN USERTURN Could I get the hotel's phone number and postcode please? USERTURN SYSTEMTURN Yes, City Centre B&B has a postal code of cb43ht. They can be reached at 01223312843. May I assist with anything else? SYSTEMTURN USERTURN No, you helped me out. Thanks. Goodbye. USERTURN SYSTEMTURN Enjoy your stay! Goodbye! SYSTEMTURN ",
+                    "qas": [
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 270,
+                                    "text": "cheap"
+                                }
+                            ],
+                            "id": "2649",
+                            "is_impossible": "false",
+                            "question": "What is the price range of the hotel?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 276,
+                                    "text": "guesthouse"
+                                }
+                            ],
+                            "id": "2650",
+                            "is_impossible": "false",
+                            "question": "What is the type of the booked hotel?"
+                        }
+                    ]
+                },
+                {
+                    "context": "USERTURN Hi, I need a hotel with free wifi internet and a rating of 3 stars. What can you recommend? USERTURN SYSTEMTURN We've got two expensive hotels with that criteria. Would you like to stay in the centre or the south? SYSTEMTURN USERTURN It doesn't matter where the hotel is located. USERTURN SYSTEMTURN Both Hotels have internet, does not state if it is free. The hotels are The Gonville Hotel and the Lensfield Hotel. SYSTEMTURN USERTURN Can you book The Gonville for me please? It'll be just me staying USERTURN SYSTEMTURN Yes, I can help you with that. How many nights will you be staying? SYSTEMTURN USERTURN 4 nights, checking in on Saturday. USERTURN SYSTEMTURN Booking was successful. Reference number is : 565UIMXV. SYSTEMTURN USERTURN Thank you for your help. Do I need to do anything else or I'm good? USERTURN SYSTEMTURN That is all unless you need something more from me. SYSTEMTURN USERTURN Thanks for all your help. USERTURN SYSTEMTURN Happy to be of service. Goodbye! SYSTEMTURN ",
+                    "qas": [
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 68,
+                                    "text": "3"
+                                }
+                            ],
+                            "id": "2045",
+                            "is_impossible": "false",
+                            "question": "What is the star count of the booked hotel?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 271,
+                                    "text": "hotel"
+                                }
+                            ],
+                            "id": "2047",
+                            "is_impossible": "false",
+                            "question": "What kind of hotel did the user book?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 462,
+                                    "text": "Gonville"
+                                }
+                            ],
+                            "id": "2050",
+                            "is_impossible": "false",
+                            "question": "What is the name of the hotel that user wants to stay in?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 644,
+                                    "text": "Saturday"
+                                }
+                            ],
+                            "id": "2051",
+                            "is_impossible": "false",
+                            "question": "What day is the reservation for?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 619,
+                                    "text": "4"
+                                }
+                            ],
+                            "id": "2052",
+                            "is_impossible": "false",
+                            "question": "For how long is the reservation made for?"
+                        }
+                    ]
+                },
+                {
+                    "context": "USERTURN Hi, I'm looking for a place to stay in the east with free wifi. USERTURN SYSTEMTURN Are you looking for a hotel or a guesthouse? SYSTEMTURN USERTURN I am looking for a 4 star guesthouse? Do you have any on the east side with free wifi? USERTURN SYSTEMTURN I found 7 hotels that are in the cheap, moderate, and expensive range. What would you prefer? SYSTEMTURN USERTURN It doesn't matter. Let's go with moderate. USERTURN SYSTEMTURN There are 3 entries that meet your requirements. SYSTEMTURN USERTURN Perfect! Can you make a reservation for me for 3 people, 5 nights starting Tuesday? USERTURN SYSTEMTURN You are booked into the carolina bed and breakfast. Your reference number is WXN8W3MZ. May I help you with anything else? SYSTEMTURN USERTURN Address please and thats all. USERTURN SYSTEMTURN They are located at 138 perne road. SYSTEMTURN USERTURN Thank you. That's all I need. USERTURN SYSTEMTURN Okay great. Enjoy your stay in Cambridge. SYSTEMTURN ",
+                    "qas": [
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 219,
+                                    "text": "east"
+                                }
+                            ],
+                            "id": "2484",
+                            "is_impossible": "false",
+                            "question": "Which part of the town does the user want to stay in?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 177,
+                                    "text": "4"
+                                }
+                            ],
+                            "id": "2485",
+                            "is_impossible": "false",
+                            "question": "What is the star count of the booked hotel?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 412,
+                                    "text": "moderate"
+                                }
+                            ],
+                            "id": "2486",
+                            "is_impossible": "false",
+                            "question": "What price range does the user prefer for their booking?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 586,
+                                    "text": "Tuesday"
+                                }
+                            ],
+                            "id": "2487",
+                            "is_impossible": "false",
+                            "question": "What is preferred day of the user for booking?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 558,
+                                    "text": "3"
+                                }
+                            ],
+                            "id": "2488",
+                            "is_impossible": "false",
+                            "question": "How many people is booking for?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 568,
+                                    "text": "5"
+                                }
+                            ],
+                            "id": "2489",
+                            "is_impossible": "false",
+                            "question": "For how long is the reservation made for?"
+                        }
+                    ]
+                }
+            ],
+            "title": "Multiwoz"
+        }
+    ],
+    "version": "1.0"
+}

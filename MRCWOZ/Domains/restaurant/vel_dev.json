@@ -1,0 +1,387 @@
+{
+    "data": [
+        {
+            "paragraphs": [
+                {
+                    "context": "USERTURN I want a restaurant in the south part of town and serves panasian food. USERTURN SYSTEMTURN Sorry, there are no restaurants in the south part of town serving panasian food. SYSTEMTURN USERTURN italian food please. phone number and postcode please. USERTURN SYSTEMTURN Frankie and Bennys serves Italian food in the south part of town. The phone number is 01223 412430, and the postcode is C.B 1, 7 D.Y. SYSTEMTURN USERTURN Sorry what type of food do they serve? USERTURN SYSTEMTURN They serve italian food. SYSTEMTURN USERTURN what is the price range ? USERTURN SYSTEMTURN They are quite expensive . SYSTEMTURN USERTURN Thank you for your help. Good bye. USERTURN SYSTEMTURN Thank you, goodbye! SYSTEMTURN ",
+                    "qas": [
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 202,
+                                    "text": "italian"
+                                }
+                            ],
+                            "id": "4",
+                            "is_impossible": "false",
+                            "question": "What kind of food does the user want to have?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 36,
+                                    "text": "south"
+                                }
+                            ],
+                            "id": "1",
+                            "is_impossible": "false",
+                            "question": "In which area does the user willing to dine?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 277,
+                                    "text": "Frankie and Bennys"
+                                }
+                            ],
+                            "id": "5",
+                            "is_impossible": "false",
+                            "question": "What is the name of the restaurant the user is willing to eat in?"
+                        }
+                    ]
+                },
+                {
+                    "context": "USERTURN Can you help me find a restaurant in the south that doesn't cost a lot of money. In fact, I need one that's quite inexpensive. USERTURN SYSTEMTURN nandos is a nice place, it serves Portuguese food and it is in the cheap price range and the south part of town, is there anything else? SYSTEMTURN USERTURN yes what is there address USERTURN SYSTEMTURN Nandos's address is Cambridge Leisure Park Clifton Way C.B 1, 7 D.Y SYSTEMTURN USERTURN Thank you good bye. USERTURN SYSTEMTURN Goodbye. SYSTEMTURN ",
+                    "qas": [
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 50,
+                                    "text": "south"
+                                }
+                            ],
+                            "id": "6",
+                            "is_impossible": "false",
+                            "question": "Which part of the town does the user want to eat?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 125,
+                                    "text": "expensive"
+                                }
+                            ],
+                            "id": "7",
+                            "is_impossible": "false",
+                            "question": "What is the price range of the restaurant?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 156,
+                                    "text": "nandos"
+                                }
+                            ],
+                            "id": "8",
+                            "is_impossible": "false",
+                            "question": "What is the name of the restaurant the user is willing to eat in?"
+                        }
+                    ]
+                },
+                {
+                    "context": "USERTURN I'm trying to find a restaurant that serves crossover food. Can you recommend anything? USERTURN SYSTEMTURN What area were you looking for? SYSTEMTURN USERTURN Anywhere really. USERTURN SYSTEMTURN Which price range are you looking for? SYSTEMTURN USERTURN I am looking for something in the expensive price range. USERTURN SYSTEMTURN No restaurants match that request. Can I search for something different for you? SYSTEMTURN USERTURN Can I get an Italian restaurant? address and phone number please. USERTURN SYSTEMTURN An expensive Italian restaurant is found in the center of town, Caffe Uno. The address is 32 Bridge Street City Centre. The phone number is 01223 448620. SYSTEMTURN USERTURN Thank you, goodbye USERTURN SYSTEMTURN Thank you for using this system. Goodbye. SYSTEMTURN ",
+                    "qas": [
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 456,
+                                    "text": "Italian"
+                                }
+                            ],
+                            "id": "13",
+                            "is_impossible": "false",
+                            "question": "What cuisine does the user want to eat?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 299,
+                                    "text": "expensive"
+                                }
+                            ],
+                            "id": "11",
+                            "is_impossible": "false",
+                            "question": "What price range does the user prefer for their booking?"
+                        }
+                    ]
+                },
+                {
+                    "context": "USERTURN I'm looking for a restaurant in the west side that's in the moderate price range. USERTURN SYSTEMTURN I have three listings,one for british,indian,italian. Are any of those types of food you are looking for? SYSTEMTURN USERTURN Are any of them available for 8 people at 19:00 on Wednesday? USERTURN SYSTEMTURN There are two restaurants available the Indian restaurant Meghna and the Italian restaurant Prezzo 8 people at 19:00 on Wednesday. Which one do you prefer? SYSTEMTURN USERTURN The Italian restaurant Prezzo sounds good. USERTURN SYSTEMTURN Booking was successful, table will be reserved for 15 mins. Reference number is : GVOKLI1A. Anything else? SYSTEMTURN USERTURN nope thats it. thanks USERTURN SYSTEMTURN You're welcome. Have a great day! SYSTEMTURN ",
+                    "qas": [
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 45,
+                                    "text": "west"
+                                }
+                            ],
+                            "id": "34",
+                            "is_impossible": "false",
+                            "question": "In which area does the user willing to dine?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 69,
+                                    "text": "moderate"
+                                }
+                            ],
+                            "id": "35",
+                            "is_impossible": "false",
+                            "question": "What is the price range of the restaurant?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 279,
+                                    "text": "19:00"
+                                }
+                            ],
+                            "id": "39",
+                            "is_impossible": "false",
+                            "question": "What time does the user want to book to tables for?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 288,
+                                    "text": "Wednesday"
+                                }
+                            ],
+                            "id": "37",
+                            "is_impossible": "false",
+                            "question": "What is preferred day of the user for booking?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 267,
+                                    "text": "8"
+                                }
+                            ],
+                            "id": "38",
+                            "is_impossible": "false",
+                            "question": "How many people are there in the reservation"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 518,
+                                    "text": "Prezzo"
+                                }
+                            ],
+                            "id": "42",
+                            "is_impossible": "false",
+                            "question": "What is the name of the restaurant the user is willing to eat in?"
+                        }
+                    ]
+                },
+                {
+                    "context": "USERTURN i am looking for a place to dine. The restaurant should be in the moderate price range and should serve international food. USERTURN SYSTEMTURN May I recommend Bloomsbury Restaurant? It serves wonderful International food. SYSTEMTURN USERTURN Are they located in the cetre? USERTURN SYSTEMTURN Yes, they are. Should I book that for you? SYSTEMTURN USERTURN Yes, please try for Sunday at 19:00 for 2 people. USERTURN SYSTEMTURN Alright - you are booked, reference number is 4GHAH1TC. SYSTEMTURN USERTURN Thanks so much. That's all I needed. Goodbye. USERTURN SYSTEMTURN Thank you for using the Cambridge TownInfo centre. Have a great day. SYSTEMTURN ",
+                    "qas": [
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 113,
+                                    "text": "international"
+                                }
+                            ],
+                            "id": "44",
+                            "is_impossible": "false",
+                            "question": "What kind of food does the user want to have?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 75,
+                                    "text": "moderate"
+                                }
+                            ],
+                            "id": "45",
+                            "is_impossible": "false",
+                            "question": "What price range does the user prefer for their booking?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 169,
+                                    "text": "Bloomsbury Restaurant"
+                                }
+                            ],
+                            "id": "46",
+                            "is_impossible": "false",
+                            "question": "Which restaurant is the user eating at?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 396,
+                                    "text": "19:00"
+                                }
+                            ],
+                            "id": "50",
+                            "is_impossible": "false",
+                            "question": "What time does the user want to sit for the meal?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 386,
+                                    "text": "Sunday"
+                                }
+                            ],
+                            "id": "48",
+                            "is_impossible": "false",
+                            "question": "What day is the reservation for?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 406,
+                                    "text": "2"
+                                }
+                            ],
+                            "id": "49",
+                            "is_impossible": "false",
+                            "question": "How many people are there in the reservation"
+                        }
+                    ]
+                },
+                {
+                    "context": "USERTURN Where can I find malaysian food? I prefer an expensive restaurant please USERTURN SYSTEMTURN No I am deeply sorry I am not getting any SYSTEMTURN USERTURN How about an expensive Malaysian restraint in the south? Is there anything available? USERTURN SYSTEMTURN I'm sorry. There's still no matching results. Would you like me to search for a different foot type? SYSTEMTURN USERTURN Yes, please. How about Indian food? USERTURN SYSTEMTURN I have 1 expensive Indian food in the south. It's called Taj Tandoori. They are located on 64 Cherry Hinton Road Cherry Hinton. Would you like a reservation? SYSTEMTURN USERTURN Perfect, yes. I want a table for 5 at 16:00 on monday. USERTURN SYSTEMTURN Booking was successful. The table will be reserved for 15 minutes. Reference number is : X2V543QG SYSTEMTURN USERTURN Thank you. That was all I needed today. Goodbye. USERTURN SYSTEMTURN You're very welcome. Have a nice time! SYSTEMTURN ",
+                    "qas": [
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 414,
+                                    "text": "Indian"
+                                }
+                            ],
+                            "id": "23",
+                            "is_impossible": "false",
+                            "question": "What kind of food does the user want to have?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 214,
+                                    "text": "south"
+                                }
+                            ],
+                            "id": "19",
+                            "is_impossible": "false",
+                            "question": "Which part of the town does the user want to eat?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 177,
+                                    "text": "expensive"
+                                }
+                            ],
+                            "id": "21",
+                            "is_impossible": "false",
+                            "question": "What price range does the user prefer for their booking?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 504,
+                                    "text": "Taj Tandoori"
+                                }
+                            ],
+                            "id": "24",
+                            "is_impossible": "false",
+                            "question": "Which restaurant is the user eating at?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 663,
+                                    "text": "16:00"
+                                }
+                            ],
+                            "id": "28",
+                            "is_impossible": "false",
+                            "question": "What time does the user want to book to tables for?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 672,
+                                    "text": "monday"
+                                }
+                            ],
+                            "id": "26",
+                            "is_impossible": "false",
+                            "question": "What day is the reservation for?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 658,
+                                    "text": "5"
+                                }
+                            ],
+                            "id": "27",
+                            "is_impossible": "false",
+                            "question": "For how many people is the reservation?"
+                        }
+                    ]
+                },
+                {
+                    "context": "USERTURN Can you help me find a restaurant by the name of Loch Fyne? USERTURN SYSTEMTURN Yes! The restaurant is at The Little Rose 37 Trumpington Street in the expensive price range. Would you like me to book tickets? SYSTEMTURN USERTURN Please book a table for 8 people at 18:15 on friday. USERTURN SYSTEMTURN I am sorry there are no reservations at that time, can I find you another restaurant that fits what you are looking for? SYSTEMTURN USERTURN Please try booking a different restaurant in the same area and price range. USERTURN SYSTEMTURN I will found you a different restaurant. SYSTEMTURN USERTURN Very well. I really need a reliable booking, make sure you give me a reference number, I don't want any confusion when I get there. USERTURN SYSTEMTURN How does The Cambridge Chop House sound? It serves british food? SYSTEMTURN USERTURN That would be good. I would like to try that one if you recommend it. USERTURN SYSTEMTURN I was able to successfully book that for you, the reference number is 8JKPEA74. Can I assist with anything else? SYSTEMTURN USERTURN No that will be all. Thanks! USERTURN SYSTEMTURN You're welcome Have a nice day. SYSTEMTURN ",
+                    "qas": [
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 774,
+                                    "text": "Cambridge Chop House"
+                                }
+                            ],
+                            "id": "57",
+                            "is_impossible": "false",
+                            "question": "Which restaurant is the user eating at?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 274,
+                                    "text": "18:15"
+                                }
+                            ],
+                            "id": "56",
+                            "is_impossible": "false",
+                            "question": "What time does the user want to book to tables for?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 283,
+                                    "text": "friday"
+                                }
+                            ],
+                            "id": "54",
+                            "is_impossible": "false",
+                            "question": "What is preferred day of the user for booking?"
+                        },
+                        {
+                            "answers": [
+                                {
+                                    "answer_start": 262,
+                                    "text": "8"
+                                }
+                            ],
+                            "id": "55",
+                            "is_impossible": "false",
+                            "question": "For how many people is the reservation?"
+                        }
+                    ]
+                }
+            ],
+
+            "title": "Multiwoz"
+        }
+    ],
+    "version": "1.0"
+}
