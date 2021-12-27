@@ -35,7 +35,7 @@ After the run you will get three files in your output folder:
 ## Using for a new domain
 
 In order to use Velocidapter with a new domain you need to provide 4 files within the input folder: 
-1. modulaterTemplates.xml: File that includes extracted dialogue chunks from the development set dialogues. 
+1. modularTemplates.xml: File that includes extracted dialogue chunks from the development set dialogues. 
 2. questions.xml: File that includes set of questions for each slot.
 3. slots.json: File that includes set of values for each slot.
 4. rules.json [Optional]: File that defines certain sequential rules for adding slots to dialogues.
