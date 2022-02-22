@@ -1,7 +1,7 @@
 # Velocidapter: Task-oriented Dialogue Comprehension Modeling | Pairing Synthetic Text Generation with Domain Adaptation
 [![Conference](https://img.shields.io/badge/SIGDIAL-2021-blueviolet)](https://github.com/cuthalionn/cuthalionn.github.io/blob/master/files/Velocidapter_SIGDIAL_CR.pdf)
 
-This is the code and data (MRCWOZ) for the SIGDIAL paper [Velocidapter: Task-oriented Dialogue Comprehension Modeling | Pairing Synthetic Text Generation with Domain Adaptation](https://github.com/cuthalionn/cuthalionn.github.io/blob/master/files/Velocidapter_SIGDIAL_CR.pdf)
+This is the code and data (MRCWOZ) for the SIGDIAL paper [Velocidapter: Task-oriented Dialogue Comprehension Modeling | Pairing Synthetic Text Generation with Domain Adaptation](https://aclanthology.org/2021.sigdial-1.14/)
 
 Feel free to open issues related to the project and email me regarding research related discussions.
 
